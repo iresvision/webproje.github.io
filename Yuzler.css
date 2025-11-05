@@ -7,31 +7,24 @@
     width: 100px;
     height: 100px;
     background-color: #f0e68c;
-    /* Daire rengi (sarı) */
     border-radius: 50%;
-    /* Daire şekli */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    /* Emoji boyutu */
     margin: 20px auto;
-    /* Daireler arası boşluk */
     border: 3px solid #ccc;
 
-    /* Animasyon ayarları */
+
     animation-name: sagaSola;
     animation-duration: 4s;
-    /* Animasyon 4 saniye sürsün */
     animation-iteration-count: infinite;
-    /* Sonsuz döngü */
     animation-direction: alternate;
-    /* Gidip gelsin */
+ 
     position: relative;
-    /* Pozisyon animasyon için gerekli */
-}
+   
 
-/* Farklı dairelerin animasyon başlangıçlarını geciktirelim */
+
 .daire:nth-child(2) {
     animation-delay: -1s;
 }
@@ -45,15 +38,16 @@
 }
 
 
-/* Animasyonun kendisi (sağa-sola) */
+
 @keyframes sagaSola {
     0% {
         transform: translateX(-100px);
-        /* Başlangıç (sol) */
+        
     }
 
     100% {
         transform: translateX(100px);
         /* Bitiş (sağ) */
     }
+
 }
