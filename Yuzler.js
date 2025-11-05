@@ -1,5 +1,5 @@
 import React from 'react';
-import './Yuzler.css'; // Oluşturduğumuz CSS dosyasını içe aktarıyoruz
+import './Yuzler.css'; 
 
 function Yuzler() {
     return (
@@ -13,5 +13,6 @@ function Yuzler() {
         </div>
     );
 }
+
 
 export default Yuzler;
