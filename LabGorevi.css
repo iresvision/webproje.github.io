@@ -1,0 +1,74 @@
+/* src/components/LabGorevi.css */
+
+/* --- GÖREV 1 - KOPYA 3 (EXTERNAL CSS) --- */
+.external-table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-top: 20px;
+    border: 2px solid green;
+}
+
+.external-table th,
+.external-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.external-table th {
+    background-color: #e0ffe0;
+    /* Açık yeşil */
+    color: #003300;
+}
+
+/* --- GÖREV 2: DAİRELERİN STİLLERİ --- */
+
+.lab-container {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.circle-container {
+    /* Konteyner, içindeki 'absolute' konumlandırılmış
+     daireler için bir referans noktası olmalı. */
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.circle {
+    /* Tüm daireler için ortak stiller */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* Tam bir daire yapar */
+    position: absolute;
+    /* Dairelerin üst üste binmesi için */
+    opacity: 0.7;
+    /* Yarı saydamlık */
+}
+
+/* 3 div için ayrı renkler ve konumlar */
+.circle-1 {
+    background-color: #ff6347;
+    /* Turuncu/Kırmızı */
+    top: 0;
+    left: 20px;
+}
+
+.circle-2 {
+    background-color: #8a2be2;
+    /* Mor */
+    top: 50px;
+    left: 100px;
+}
+
+.circle-3 {
+    background-color: #ffff00;
+    /* Sarı */
+    top: 80px;
+    left: 10px;
+}
