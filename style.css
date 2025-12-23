@@ -1,4 +1,3 @@
-/* Genel Sıfırlama */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,110 +6,148 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #0f172a;
-    /* Genel arka plan rengin */
-    color: #f8fafc;
+
+    background-color: #0b1120;
+    color: #b4b7ba;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.owner-interactive-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #171e2e;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 200px;
+    overflow: hidden;
+}
+
+.owner-interactive-box summary {
+    list-style: none;
+    padding: 12px;
+    background: #1e293b;
+    color: #f1f5f9;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+}
+
+.owner-interactive-box .details-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: #0b1120;
+    font-size: 12px;
+}
+
+
+header {
+
+    background: linear-gradient(180deg, #c3baba 0%, #e2e8f0 100%);
+    color: #334155;
+
+    text-align: center;
+    padding: 70px 20px;
+    margin-bottom: -40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -1px;
+    font-size: 1.8rem;
+
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+.container {
+    flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+    padding: 0 20px 40px 20px;
 }
 
-/* Ana Kutu */
-.wrap {
+.card {
+    background: #171e2e;
+
     width: 100%;
-    max-width: 600px;
-    background: #1e293b;
-    /* Panel rengin */
-    border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    max-width: 650px;
     padding: 40px;
-    border: 1px solid #334155;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border: 1px solid #1e293b;
+}
+
+.section-title {
     text-align: center;
+    color: #f1f5f9;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 15px;
+    font-weight: 500;
 }
 
-/* Başlık Alanı */
-header.top {
-    margin-bottom: 40px;
-    border-bottom: 1px solid #334155;
-    padding-bottom: 20px;
+.week-group {
+    margin-bottom: 25px;
 }
 
-.shiny-text {
-    font-weight: 900;
-    font-size: 2.2rem;
-    color: #ffffff;
-    letter-spacing: -1px;
-}
-
-h3 {
-    color: #38bdf8;
-    /* Vurgu rengin */
-    margin-top: 5px;
+.week-group h3 {
     font-size: 14px;
-    font-weight: 400;
+    color: #94a3b8;
+
+    margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-/* Venn Şeması Alanı */
-.venn-wrapper {
-    background: #0f172a;
-    border-radius: 8px;
-    padding: 50px 0;
+
+.week-group ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.p-button {
+    display: block;
+    background-color: transparent;
+    color: #cbd5e1;
+
     border: 1px solid #334155;
-    display: flex;
-    justify-content: center;
+    padding: 14px 20px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
 }
 
-.container {
-    position: relative;
-    width: 400px;
-    height: 350px;
+.p-button:hover {
+
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+    color: #334155;
+
+    border-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.circle {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    position: absolute;
-    /* mix-blend-mode kesişimlerin renk değiştirmesini sağlar */
-    mix-blend-mode: screen;
-    transition: transform 0.3s ease;
-}
-
-.circle:hover {
-    transform: scale(1.05);
-    z-index: 10;
-}
-
-/* Renkler ve Konumlar */
-.kirmizi {
-    background-color: rgba(239, 68, 68, 0.7);
-    /* Soft Red */
-    top: 20px;
-    left: 40px;
-}
-
-.mavi {
-    background-color: rgba(56, 189, 248, 0.7);
-    /* Sky Blue */
-    top: 20px;
-    left: 140px;
-}
-
-.sari {
-    background-color: rgba(250, 204, 21, 0.7);
-    /* Golden Yellow */
-    top: 110px;
-    left: 90px;
-}
-
-/* Alt Bilgi */
-footer.foot {
-    margin-top: 30px;
-    color: #64748b;
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #475569;
     font-size: 12px;
-    line-height: 1.6;
 }
