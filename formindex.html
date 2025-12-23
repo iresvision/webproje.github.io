@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu - İrem Nur Saral</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+
+<body>
+    <main class="wrap">
+        <nav style="margin-bottom: 15px;">
+            <a href="../index.html" style="color: #38bdf8; text-decoration: none; font-weight: bold;">← Ana Sayfaya
+                Dön</a>
+        </nav>
+
+        <header class="top">
+            <h1 class="shiny-text">BTE311 Kayıt Formu</h1>
+        </header>
+
+        <section class="form-section">
+            <h2>Üyelik Formu</h2>
+            <p>Aşağıdaki formu eksiksiz doldurunuz.</p>
+
+            <form id="registrationForm" action="../index.html" method="POST">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">Ad <span class="required">*</span></label>
+                        <input type="text" id="firstName" name="firstName" class="form-input"
+                            placeholder="Adınızı giriniz" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Soyad <span class="required">*</span></label>
+                        <input type="text" id="lastName" name="lastName" class="form-input"
+                            placeholder="Soyadınızı giriniz" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">E-posta <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="ornek@email.com"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="0 (555) 123 45 67">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Şifre <span class="required">*</span></label>
+                        <input type="password" id="password" name="password" class="form-input"
+                            placeholder="Güçlü bir şifre giriniz" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthDate">Doğum Tarihi <span class="required">*</span></label>
+                        <input type="date" id="birthDate" name="birthDate" class="form-input" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">Şehir</label>
+                        <select id="city" name="city" class="form-select">
+                            <option value="">Şehir Seçiniz</option>
+                            <option value="ankara">Ankara</option>
+                            <option value="istanbul">İstanbul</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Cinsiyet <span class="required">*</span></label>
+                        <select id="gender" name="gender" class="form-select" required>
+                            <option value="">Seçiniz</option>
+                            <option value="kadin">Kadın</option>
+                            <option value="erkek">Erkek</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="form-group">
+                    <label for="about">Kendiniz Hakkında Eklemek İstedikleriniz</label>
+                    <textarea id="about" name="about" class="form-textarea"
+                        placeholder="Kendiniz hakkında..."></textarea>
+                </div>
+
+
+
+                <div class="button-group">
+                    <button type="submit" class="form-btn primary">Kayıt Ol</button>
+                    <button type="reset" class="form-btn">Temizle</button>
+                    <a href="../index.html" class="form-btn danger">İptal</a>
+                </div>
+            </form>
+        </section>
+
+        <footer class="foot">
+            <small>İrem Nur Saral| Hacettepe Böte </small>
+        </footer>
+    </main>
+</body>
+
+</html>

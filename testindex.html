@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTE311 Web Quiz - İrem Nur Saral</title>
+    <link rel="stylesheet" href="teststyle.css">
+</head>
+
+<body>
+
+    <details class="owner-interactive-box">
+        <summary>Öğrenci Bilgileri</summary>
+        <div class="details-content">
+            <span class="name">İrem Nur Saral</span>
+            <span class="id">2220780028</span>
+            <span class="dept">Hacettepe Üniversitesi</span>
+        </div>
+    </details>
+
+    <main class="wrap">
+        <nav style="margin-bottom: 20px;">
+            <a href="../index.html" style="color: #38bdf8; text-decoration: none; font-weight: bold;">← Ana Sayfaya
+                Dön</a>
+        </nav>
+
+        <header class="top">
+            <h1 class="shiny-text">WEB GELİŞTİRME SEVİYE TESTİ</h1>
+        </header>
+
+        <section class="form-section">
+            <form id="quizForm" action="../index.html" method="POST">
+
+                <div class="form-group">
+                    <h3>1. Bir HTML belgesinin kök (root) etiketi hangisidir? [cite: 15]</h3>
+                    <div class="form-check-group">
+                        <div class="form-check">
+                            <input type="radio" id="q1a" name="q1" value="body">
+                            <label for="q1a">A) &lt;body&gt;</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="q1b" name="q1" value="html">
+                            <label for="q1b">B) &lt;html&gt;</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h3>2. Aşağıdakilerden hangileri CSS Box Model bileşenleridir? </h3>
+                    <div class="form-check-group">
+                        <div class="form-check">
+                            <input type="checkbox" id="q2a" name="q2" value="padding">
+                            <label for="q2a">Padding</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="q2b" name="q2" value="margin">
+                            <label for="q2b">Margin</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h3>3. Sayfa başlığı belirleyen etiket &lt;<input type="text" name="q3" class="inline-input"
+                            placeholder="..."> &gt; etiketidir. </h3>
+                </div>
+
+                <div class="form-group">
+                    <h3>4. Hangisi kendi kapanan (self-closing) bir etikettir?</h3>
+                    <select name="q4" class="form-select">
+                        <option value="">Seçiniz...</option>
+                        <option value="img">img</option>
+                        <option value="div">div</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <h3>5. CSS kural yapısını kısaca açıklayınız: [cite: 13]</h3>
+                    <textarea name="q5" class="form-textarea" placeholder="Cevabınızı buraya yazınız..."></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="form-btn primary">Testi Bitir</button>
+                    <button type="reset" class="form-btn">Temizle</button>
+                    <a href="../index.html" class="form-btn danger">İptal</a>
+                </div>
+            </form>
+        </section>
+
+        <footer class="foot">
+            <small>İrem Nur Saral| Hacettepe Böte </small>
+        </footer>
+    </main>
+</body>
+
+</html>

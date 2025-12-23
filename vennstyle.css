@@ -1,0 +1,116 @@
+/* Genel Sıfırlama */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    /* Genel arka plan rengin */
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Ana Kutu */
+.wrap {
+    width: 100%;
+    max-width: 600px;
+    background: #1e293b;
+    /* Panel rengin */
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border: 1px solid #334155;
+    text-align: center;
+}
+
+/* Başlık Alanı */
+header.top {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 20px;
+}
+
+.shiny-text {
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: #ffffff;
+    letter-spacing: -1px;
+}
+
+h3 {
+    color: #38bdf8;
+    /* Vurgu rengin */
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Venn Şeması Alanı */
+.venn-wrapper {
+    background: #0f172a;
+    border-radius: 8px;
+    padding: 50px 0;
+    border: 1px solid #334155;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 350px;
+}
+
+.circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    position: absolute;
+    /* mix-blend-mode kesişimlerin renk değiştirmesini sağlar */
+    mix-blend-mode: screen;
+    transition: transform 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+/* Renkler ve Konumlar */
+.kirmizi {
+    background-color: rgba(239, 68, 68, 0.7);
+    /* Soft Red */
+    top: 20px;
+    left: 40px;
+}
+
+.mavi {
+    background-color: rgba(56, 189, 248, 0.7);
+    /* Sky Blue */
+    top: 20px;
+    left: 140px;
+}
+
+.sari {
+    background-color: rgba(250, 204, 21, 0.7);
+    /* Golden Yellow */
+    top: 110px;
+    left: 90px;
+}
+
+/* Alt Bilgi */
+footer.foot {
+    margin-top: 30px;
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.6;
+}
