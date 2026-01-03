@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>F1 Pilot Kartları Ödevi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b1120;
+
+            color: #f1f5f9;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        header {
+            background: linear-gradient(180deg, #ffffff 0%, #e2e8f0 100%);
+            color: #334155;
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin: 0;
+        }
+
+
+        .card {
+            background-color: #171e2e;
+
+            border: 1px solid #334155;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #ffffff;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            filter: grayscale(20%);
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .card-title {
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+
+        .p-button {
+            margin-top: auto;
+            display: block;
+            background-color: transparent;
+            color: #f1f5f9;
+            border: 1px solid #334155;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .p-button:hover {
+            background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+            color: #334155;
+            border-color: #ffffff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #475569;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Formula 1 Pilotları</h1>
+    </header>
+
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://media.formula1.com/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png"
+                        alt="Lewis Hamilton">
+                    <div class="card-body">
+                        <h4 class="card-title">Lewis Hamilton</h4>
+                        <p class="card-text">7 dünya şampiyonluğu ile hem istatistik hem de nesnel Formula 1'in en
+                            başarılı pilotudur.</p>
+                        <a href="https://tr.wikipedia.org/wiki/Lewis_Hamilton" target="_blank" class="p-button">Daha
+                            fazla bilgi için</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://media.formula1.com/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png"
+                        alt="Max Verstappen">
+                    <div class="card-body">
+                        <h4 class="card-title">Max Verstappen</h4>
+                        <p class="card-text">Red Bull Racing pilotu ve Formula 1 de son yıllardaki şampiyonlukları ile
+                            kendini gösterdi.
+                        </p>
+                        <a href="https://tr.wikipedia.org/wiki/Max_Verstappen" target="_blank" class="p-button">Daha
+                            fazla bilgi için</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://media.formula1.com/content/dam/fom-website/drivers/C/CHALEC01_Charles_Leclerc/chalec01.png"
+                        alt="Charles Leclerc">
+                    <div class="card-body">
+                        <h4 class="card-title">Charles Leclerc</h4>
+                        <p class="card-text">Ferrari'nin "Prens" lakaplı pilotu, Monakolu yetenekli yarışçı.</p>
+                        <a href="https://tr.wikipedia.org/wiki/Charles_Leclerc" target="_blank" class="p-button">Daha
+                            fazla bilgi için</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://media.formula1.com/content/dam/fom-website/drivers/L/LANNOR01_Lando_Norris/lannor01.png"
+                        alt="Lando Norris">
+                    <div class="card-body">
+                        <h4 class="card-title">Lando Norris</h4>
+                        <p class="card-text">McLaren'ın yıldız pilotu ve son dünya şampiyonu.</p>
+                        <a href="https://tr.wikipedia.org/wiki/Lando_Norris" target="_blank" class="p-button">Daha fazla
+                            bilgi için</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://media.formula1.com/content/dam/fom-website/drivers/C/CARSAI01_Carlos_Sainz/carsai01.png"
+                        alt="Carlos Sainz">
+                    <div class="card-body">
+                        <h4 class="card-title">Carlos Sainz</h4>
+                        <p class="card-text">"Smooth Operator" lakaplı, Teknik zekası ve hızıyla öne çıkan
+                            İspanyol pilotu.</p>
+                        <a href="https://tr.wikipedia.org/wiki/Carlos_Sainz_Jr." target="_blank" class="p-button">Daha
+                            fazla bilgi için</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img class="card-img-top"
+                        src="https://media.formula1.com/content/dam/fom-website/drivers/G/GEORUS01_George_Russell/georus01.png"
+                        alt="George Russell">
+                    <div class="card-body">
+                        <h4 class="card-title">George Russell</h4>
+                        <p class="card-text">Mercedes'in "Gümüş Ok"u, hırsı ve hızıyla geleceğin parlayan isimlerinden.
+                        </p>
+                        <a href="https://tr.wikipedia.org/wiki/George_Russell" target="_blank" class="p-button">Daha
+                            fazla bilgi için</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>İrem Nur Saral | BÖTE </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
